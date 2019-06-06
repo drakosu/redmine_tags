@@ -64,6 +64,15 @@ rake redmine:plugins:spec RAILS_ENV=test NAME=redmine_tags
 
 ## Removal
 
+Run following command to uninstall this plugin.
+
+```
+rake redmine:plugins:migrate NAME=redmine_tags VERSION=0
+```
+
+
+## Force removal
+
 WARNING: This plugin shares the `tags` and `taggings` tables with other plugins
 that use the `acts-as-taggable-on` gem. Do not run the below command if you have
 another active plugin using them.
